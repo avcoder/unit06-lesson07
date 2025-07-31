@@ -160,11 +160,10 @@ transition: slide-left
 ---
 
 # Routes vs Layouts
-It's good practice to decouple layouts with routes 
-
 - Good practice to:
   - place routes in AppRouter.tsx for future ease of maintainability
-  - separate layout concerns with routing logic for future scalability and flexibility
+  - decouple layout concerns separated from routing for future scalability and flexibility
+  - Optional can use `<NavLink>` for additional styling considerations
   ```jsx
   // in AppRouter.tsx
   return (
