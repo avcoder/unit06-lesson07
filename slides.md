@@ -146,6 +146,9 @@ transition: slide-left
 ---
 
 # Exercise: Nested Routing
+Refactor https://github.com/avcoder/email-react-template to implement Nested Routing
+
+- Make the sidebar "Calendar", route to `<HelloCalendar />` such that it replaces the Inbox and the EmailBody areas of the page
 
 ---
 layout: image-right
