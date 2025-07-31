@@ -63,6 +63,27 @@ transition: slide-left
 5. React renders the component you want displayed via `<Route path="/about" element={<About />}`
 6. Browser history is preserved so that back/forward navigation is still functional
 
+---
+transition: slide-left
+---
+
+# Advantages for Client-Side Routing
+
+```jsx
+<BrowserRouter>
+  <Routes>
+      <Route path="/about" element={<About />} />
+  </Routes>
+</BrowserRouter>
+```
+
+- Faster Navigation: no more flash of white nothingness on page reload but rather is instant
+- Better UX: smoother transitions, more App-like Behaviour (SPA), React state is preserved
+- Reduced Server Load: Server now primarily serves JSON via API requests
+- Component-Based Routing: Routes map directly to React components making routing logic highly composable and maintainable
+- Provides Rich Features: Nested Routing, Route-based code splitting, dynamic routing
+
+
 
 ---
 layout: image-right
