@@ -86,8 +86,9 @@ transition: slide-left
 - Faster Navigation: no more flash of white nothingness on page reload but rather is instant
 - Better UX: smoother transitions, more App-like Behaviour (SPA), React state is preserved
 - Reduced Server Load: Server now primarily serves JSON via API requests
-- Component-Based Routing: Routes map directly to React components making routing logic highly composable and maintainable
-- Provides Rich Features: Nested Routing, Route-based code splitting, dynamic routing
+- Routes map directly to React components making routing logic highly composable and maintainable
+- Provides: Nested Routing (`/recipes/chicken`), and dynamic routing (`/recipes/12345`)
+- Handles edge cases related to `history.pushState` and `history.back/forward`
 
 
 
