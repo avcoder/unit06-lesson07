@@ -189,6 +189,15 @@ transition: slide-left
 transition: slide-left
 ---
 
+# Nested Routing
+
+- establish parent-child relationship between routes for better organization as children can inherit routes from parents
+- otherwise may need to manually define all `/recipes/chicken` and `recipes/vegetarian` etc.
+
+---
+transition: slide-left
+---
+
 # Nested Routes
 
 ---
@@ -207,6 +216,7 @@ class: text-left
 - 🔊 [Complete Guide to useEffect](https://overreacted.io/a-complete-guide-to-useeffect/)
 - 🤔 [Thinking in React](https://react.dev/learn/thinking-in-react)
 - 🍬 [Github Student Dev Pack](https://education.github.com/pack)
+- 🛍️ [FakeStore API](https://fakestoreapi.com/)
 
 <br>
 <hr>
