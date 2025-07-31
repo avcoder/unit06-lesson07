@@ -142,6 +142,12 @@ transition: slide-left
 - Does your navigation still work even if you click the "Back" and "Forward" button?
 
 ---
+transition: slide-left
+---
+
+# Exercise: Nested Routing
+
+---
 layout: image-right
 transition: slide-left
 image: /assets/tyler.png
