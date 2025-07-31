@@ -148,6 +148,7 @@ transition: slide-left
 # Exercise: Basic Routing
 
 - Refactor https://github.com/avcoder/email-react-template to do Basic Routing
+- import BrowserRouter, Routes, Route, Link as needed
 - Make the sidebar "Calendar", route to `<Calendar />` such that it replaces the Inbox and the EmailBody areas of the page
 - Same with "Notes"
 - Same with "Contacts"
