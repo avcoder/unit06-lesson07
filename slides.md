@@ -156,6 +156,23 @@ transition: slide-left
 - Under dev tools > Network tab > verify there is no GET/POST request when re-routing to different components
 
 ---
+transition: slide-left
+---
+
+# Routes vs Layouts
+It's good practice to decouple layouts with routes 
+
+- Good practice to:
+  - place routes in AppRouter.tsx for future ease of maintainability
+  - separate layout concerns with routing logic for future scalability and flexibility
+
+---
+transition: slide-left
+---
+
+# Nested Routes
+
+---
 layout: image-right
 transition: slide-left
 image: /assets/tyler.png
