@@ -87,7 +87,7 @@ transition: slide-left
 - Better UX: smoother transitions, more App-like Behaviour (SPA), React state is preserved
 - Reduced Server Load: Server now primarily serves JSON via API requests
 - Routes map directly to React components making routing logic highly composable and maintainable
-- Provides: Nested Routing (`/recipes/chicken`), and dynamic routing (`/recipes/12345`)
+- Provides: Nested Routing (`/recipes/chicken`), and dynamic routing (`/recipes/:id`)
 - Handles edge cases related to `history.pushState` and `history.back/forward`
 
 
@@ -107,6 +107,7 @@ class: text-left
 - 🚦 [Build your own React Router](https://ui.dev/build-your-own-react-router)
 - 🔊 [Complete Guide to useEffect](https://overreacted.io/a-complete-guide-to-useeffect/)
 - 🤔 [Thinking in React](https://react.dev/learn/thinking-in-react)
+- 🍬 [Github Student Dev Pack](https://education.github.com/pack)
 
 <br>
 <hr>
