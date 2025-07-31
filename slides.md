@@ -106,6 +106,15 @@ transition: slide-left
   </BrowserRouter>
   ```
 - 🤔 Now examine React dev tools > Components
+
+
+---
+transition: slide-left
+---
+
+# Exercise: Basic Routing
+(5 min) Refactor App.tsx such that our nav displays and navigates to every Lesson we've done so far
+
 - in `App.tsx`:
   ```jsx
   import { Routes, Route, Link } from "react-router";
@@ -120,18 +129,8 @@ transition: slide-left
         <Route path="lesson02" element={<Lesson02 />} />
       </Routes>
   ```
-
----
-transition: slide-left
----
-
-# Exercise:
-5 min
-
-- Refactor App.tsx such that our nav displays and navigates to every Lesson we've done so far
-- Optional: use `.nav` to style your nav tag: `<nav className='nav'`
+- Optional: in App.css, use `.nav` to style your nav tag: `<nav className='nav'`
   ```css
-  /* in App.css */
   .nav {
     display: flex;
     gap: 10px;
