@@ -126,8 +126,21 @@ transition: slide-left
 ---
 
 # Exercise:
+5 min
 
 - Refactor App.tsx such that our nav displays and navigates to every Lesson we've done so far
+- Optional: use `.nav` to style your nav tag: `<nav className='nav'`
+  ```css
+  /* in App.css */
+  .nav {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    list-style-type: none;
+    flex-wrap: wrap;
+  }
+  ```
+- Does your navigation still work even if you click the "Back" and "Forward" button?
 
 ---
 layout: image-right
