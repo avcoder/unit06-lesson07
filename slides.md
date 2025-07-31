@@ -189,7 +189,7 @@ transition: slide-left
 transition: slide-left
 ---
 
-# Nested Routing
+# Dynamic Routing
 
 - establish parent-child relationship between routes for better organization as children can inherit routes from parents
 - otherwise may need to manually define all `/recipes/chicken` and `recipes/vegetarian` etc.
