@@ -165,6 +165,26 @@ It's good practice to decouple layouts with routes
 - Good practice to:
   - place routes in AppRouter.tsx for future ease of maintainability
   - separate layout concerns with routing logic for future scalability and flexibility
+  ```jsx
+  // in AppRouter.tsx
+  return (
+    <Layout>
+      <Routes>
+        ...
+      </Routes>
+    </Layout>
+  )
+  ```
+  ```jsx
+  const Layout: React.FC<LayoutProps> = ({ children }) => { // in Layout.tsx
+  return (
+    <>
+      <Header />
+        {children}
+      <Footer />
+    </>
+  )
+  ```
 
 ---
 transition: slide-left
