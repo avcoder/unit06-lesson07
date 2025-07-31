@@ -239,6 +239,15 @@ const App = () => {
 ```
 
 ---
+transition: slide-left
+---
+
+# Exercise
+
+- Use your Lesson01.tsx app and play/experiment with Nested Routes and Dynamic Routes
+- Bonus idea: Make a layout mockups using react-router for your Capstone such that you've already scaffolded all your redirected pages/Components
+
+---
 layout: image-right
 transition: slide-left
 image: /assets/tyler.png
