@@ -201,6 +201,26 @@ transition: slide-left
 
 # Nested Routes
 
+```jsx
+const App = () => {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="about" element={<About />} />
+
+          <Route path="dashboard" element={<Dashboard />}>
+            <Route path="profile" element={<DashboardProfile />} />
+            <Route path="settings" element={<DashboardSettings />} />
+          </Route>
+        </Route>
+      </Routes>
+    </Router>
+  );
+};
+```
+
 ---
 layout: image-right
 transition: slide-left
