@@ -21,7 +21,7 @@ Frontend Development: Unit 06 - Lesson 07
 
 - [ ] React Router and BrowserRouter
 - [ ] useRef, useContext
-- [ ] Redux
+- [ ] useReducer, Redux
 
 <div class="abs-br m-6 text-xl">
   <a href="https://github.com/slidevjs/slidev" target="_blank" class="slidev-icon-btn">
