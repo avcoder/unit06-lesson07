@@ -70,11 +70,17 @@ transition: slide-left
 # Advantages for Client-Side Routing
 
 ```jsx
+// in main.jsx/tsx
 <BrowserRouter>
   <Routes>
       <Route path="/about" element={<About />} />
   </Routes>
 </BrowserRouter>
+
+// in App.jsx/tsx
+<nav>
+  <Link to="/about">About</Link/>
+</nav>
 ```
 
 - Faster Navigation: no more flash of white nothingness on page reload but rather is instant
