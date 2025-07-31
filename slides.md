@@ -383,6 +383,16 @@ const Counter = () => {
 
 export default Counter;
 ```
+---
+transition: slide-left
+---
+
+# Exercise
+
+- Use your Lesson01.tsx app and play/experiment with `useContext` and `useReducer`
+- Solidify your mental models for each hook
+   - `useContext`: Learn how the data flows from one component to another
+   - `useReducer`: Migrate all your useState statements to instead use `useReducer`
 
 ---
 transition: slide-left
