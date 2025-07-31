@@ -152,6 +152,7 @@ transition: slide-left
 - Same with "Notes"
 - Same with "Contacts"
 - Make clicking Inbox go back to original view
+- When clicking dev tools > Network tab > verify there is no GET/POST request
 
 ---
 layout: image-right
