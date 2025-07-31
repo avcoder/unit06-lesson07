@@ -16,10 +16,10 @@ transition: slide-left
 mdc: true
 ---
 
-# React: Routing
+# React Router
 Frontend Development: Unit 06 - Lesson 07
 
-- [ ] React Router and BrowserRouter
+- [ ] BrowserRouter, Link
 - [ ] useRef, useContext
 - [ ] useReducer, Redux
 
@@ -38,13 +38,37 @@ transition: slide-left
 ---
 
 # Recap
-- Q: 
+- Q: In traditional server-side websites what happens when you goto `/posts` or `/users/:userId`?  
+   - Q: Is there a direct correlation between path and actual physical folder org?
+- Server-side routing is usually slower as page reloads as indicated by the brief white flicker as page reloads
+- Here's how to do a basic URL Change without a reload:
+  ```js
+  // goto amazon.ca
+  history.pushState({ page: 1 }, '', '/deals'); // console.log(location.pathname)
+  ```
+  - Then try `history.back()` and `history.forward()
+- Recall that AJAX allows parts of a page to reload without full page refresh (think google maps)
+
+---
+transition: slide-left
+---
+
+# Client-Side Routing using React Router
+
+1. User clicks a `<Link to="/about">` component
+   - unlike a regular anchor tag, React Router's `<Link>` prevents a full page reload
+2. The click event is intercepted and `event.preventDefault()` stops the browser from actually navigating to `/about` and reloading the page
+3. React Router updates the browser's address bar (it uses history.pushState())
+4. React Router tries to match the new route with the component you want displayed
+5. React renders the component you want displayed via `<Route path="/about" element={<About />}`
+6. Browser history is preserved so that back/forward navigation is still functional
+
 
 ---
 layout: image-right
 transition: slide-left
-image: /assets/holmes.png
-backgroundSize: 420px 500px
+image: /assets/tyler.png
+backgroundSize: 420px 400px
 class: text-left
 ---
 
@@ -52,7 +76,9 @@ class: text-left
 
 🍦 Cool Tips, Trends and Resources:
 
-- 🪝 [usehooks.com](https://usehooks.com/)
+- 🚦 [Build your own React Router](https://ui.dev/build-your-own-react-router)
+- 🔊 [Complete Guide to useEffect](https://overreacted.io/a-complete-guide-to-useeffect/)
+- 🤔 [Thinking in React](https://react.dev/learn/thinking-in-react)
 
 <br>
 <hr>
