@@ -90,7 +90,36 @@ transition: slide-left
 - Provides: Nested Routing (`/recipes/chicken`), and dynamic routing (`/recipes/:id`)
 - Handles edge cases related to `history.pushState` and `history.back/forward`
 
+---
+transition: slide-left
+---
 
+# Install React Router
+
+- `npm i react-router`
+- in `main.tsx`:
+  ```jsx
+  import { BrowserRouter } from "react-router";
+  // inside root.render > <StrictMode>
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>
+  ```
+- 🤔 Now examine React dev tools > Components
+- in `App.tsx`:
+  ```jsx
+  import { Routes, Route, Link } from "react-router";
+  // inside return (
+    <>
+      <nav className="nav">
+        <Link to="lesson01">Lesson 01</Link>
+        <Link to="lesson02">Lesson 02</Link>
+      </nav>
+      <Routes>
+        <Route path="lesson01" element={<Lesson01 />} />
+        <Route path="lesson02" element={<Lesson02 />} />
+      </Routes>
+  ```
 
 ---
 layout: image-right
