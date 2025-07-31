@@ -145,7 +145,7 @@ transition: slide-left
 transition: slide-left
 ---
 
-# Exercise: Nested Routing
+# Exercise: Basic Routing
 
 - see https://reactrouter.com/start/declarative/routing#nested-routes
 - Refactor https://github.com/avcoder/email-react-template to implement Nested Routing
