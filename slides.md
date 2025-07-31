@@ -267,8 +267,61 @@ class: text-left
 transition: slide-left
 ---
 
-# useContext
+# useContext (pg.1)
 see https://react.dev/reference/react/useContext
+
+```jsx
+// UserContext.js
+import React, { createContext, useState } from 'react';
+
+export const UserContext = createContext();
+
+export const UserProvider = ({ children }) => {
+  const [user, setUser] = useState(null);
+
+  const login = (name) => setUser({ name });
+  const logout = () => setUser(null);
+
+  return (
+    <UserContext.Provider value={{ user, login, logout }}>
+      {children}
+    </UserContext.Provider>
+  );
+};
+```
+
+
+---
+transition: slide-left
+---
+
+# useContext (pg.2)
+
+```jsx
+// UserStatus.js
+import React, { useContext } from 'react';
+import { UserContext } from './UserContext';
+
+const UserStatus = () => {
+  const { user, logout } = useContext(UserContext);
+
+  return (
+    <div>
+      {user ? (
+        <>
+          <p>Welcome, {user.name}!</p>
+          <button onClick={logout}>Logout</button>
+        </>
+      ) : (
+        <p>No user is logged in.</p>
+      )}
+    </div>
+  );
+};
+
+export default UserStatus;
+```
+
 
 ---
 transition: slide-left
