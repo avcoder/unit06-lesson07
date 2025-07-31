@@ -179,12 +179,14 @@ transition: slide-left
 ---
 
 # useContext
+see https://react.dev/reference/react/useContext
 
 ---
 transition: slide-left
 ---
 
 # useReducer
+see https://react.dev/reference/react/useReducer
 
 ---
 transition: slide-left
