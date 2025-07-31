@@ -19,7 +19,7 @@ mdc: true
 # React Router
 Frontend Development: Unit 06 - Lesson 07
 
-- [ ] BrowserRouter, Link
+- [ ] BrowserRouter, Routes, Route, Link
 - [ ] useContext
 - [ ] useReducer
 
