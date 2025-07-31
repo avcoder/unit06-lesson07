@@ -129,7 +129,7 @@ Refactor App.tsx such that our nav displays and navigates to every Lesson we've 
         <Route path="lesson02" element={<Lesson02 />} />
       </Routes>
   ```
-- Optional: in App.css, use `.nav` to style your nav tag: `<nav className='nav'`
+- Optional: in App.css, use `.nav` to style: `<nav className='nav'`
   ```css
   .nav {
     display: flex;
@@ -139,7 +139,7 @@ Refactor App.tsx such that our nav displays and navigates to every Lesson we've 
     flex-wrap: wrap;
   }
   ```
-- Does your navigation still work even if you click the "Back" and "Forward" button?
+- Does navigation still work even if you click the "Back" and "Forward" button?
 
 ---
 transition: slide-left
