@@ -20,8 +20,8 @@ mdc: true
 Frontend Development: Unit 06 - Lesson 07
 
 - [ ] BrowserRouter, Link
-- [ ] useRef, useContext
-- [ ] useReducer, Redux
+- [ ] useContext
+- [ ] useReducer
 
 <div class="abs-br m-6 text-xl">
   <a href="https://github.com/slidevjs/slidev" target="_blank" class="slidev-icon-btn">
@@ -122,6 +122,14 @@ transition: slide-left
   ```
 
 ---
+transition: slide-left
+---
+
+# Exercise:
+
+- Refactor App.tsx such that our nav displays and navigates to every Lesson we've done so far
+
+---
 layout: image-right
 transition: slide-left
 image: /assets/tyler.png
@@ -149,7 +157,13 @@ class: text-left
 transition: slide-left
 ---
 
-# O
+# useContext
+
+---
+transition: slide-left
+---
+
+# useReducer
 
 ---
 transition: slide-left
