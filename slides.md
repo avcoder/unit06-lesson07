@@ -193,8 +193,25 @@ transition: slide-left
 
 - establish parent-child relationship between routes for better organization as children can inherit routes from parents
 - otherwise may need to manually define all `/recipes/chicken` and `recipes/vegetarian` etc.
-- see https://github.com/avcoder/react-router-recipes
 
+```jsx
+const App = () => {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route path="users" element={<Users />} />
+          <Route path="users/:id" element={<UserDetail />} />
+        </Route>
+      </Routes>
+    </Router>
+  );
+};
+```
+
+<!--
+- see https://github.com/avcoder/react-router-recipes
+-->
 ---
 transition: slide-left
 ---
