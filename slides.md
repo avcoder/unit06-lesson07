@@ -112,8 +112,8 @@ transition: slide-left
 transition: slide-left
 ---
 
-# Exercise: Basic Routing
-(5 min) Refactor App.tsx such that our nav displays and navigates to every Lesson we've done so far
+# Basic Routing
+Refactor App.tsx such that our nav displays and navigates to every Lesson we've done so far
 
 - in `App.tsx`:
   ```jsx
@@ -147,9 +147,11 @@ transition: slide-left
 
 # Exercise: Basic Routing
 
-- see https://reactrouter.com/start/declarative/routing#nested-routes
-- Refactor https://github.com/avcoder/email-react-template to implement Nested Routing
-- Make the sidebar "Calendar", route to `<HelloCalendar />` such that it replaces the Inbox and the EmailBody areas of the page
+- Refactor https://github.com/avcoder/email-react-template to do Basic Routing
+- Make the sidebar "Calendar", route to `<Calendar />` such that it replaces the Inbox and the EmailBody areas of the page
+- Same with "Notes"
+- Same with "Contacts"
+- Make clicking Inbox go back to original view
 
 ---
 layout: image-right
